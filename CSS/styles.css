@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #EFBC9B;
+    background-color: #000264;
 }
 
 main {
@@ -14,7 +14,8 @@ main {
 }
 
 footer {
-    
+    padding: 5% 1%;
+    margin: 5% 1px;
     width: 100%;
     color: aliceblue;
 }
@@ -22,9 +23,11 @@ footer {
     margin-left: 20%;
     margin-right: 20%;
     border-top: 10px dotted;
-    text-align: center;
+    text-align: center;  
 }
-
+p, h1{
+    color: #ffffff;
+}
 .card-photo {
     width: 100px;
     height: 100px;
@@ -50,7 +53,7 @@ nav{
     padding: 5px;
     margin: 10px;
     font-family: calibri;
-    color: black;
+    color: wheat;
     text-decoration: underline;
 
 }
@@ -66,11 +69,14 @@ nav{
     border-radius: 0% 50%  0% 50%;
     border-top: 20px double;
     border-bottom: 20px double;
+    border-color: wheat;
 }
 
 .all-cards{
-    background-color: #EFBC9B;
-
+    background-color: #010053;
+    margin: 2% 10% ;
+    padding: 2% 10%;
+    border-radius: 10px ;
 }
 
 .card{
@@ -84,3 +90,20 @@ nav{
     border-radius: 20px;
     background-color: rgb(255, 149, 0);
 }
+
+h1{
+    font-family: verdana;
+    font-size: 3em;
+}
+.my-name{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+}
+
+.social-media-div a{
+    margin: 10px;
+}
+.footer-text , .social-media-div{
+    padding-top: 20px;
+}
+

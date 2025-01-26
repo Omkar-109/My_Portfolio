@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="/CSS/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
@@ -18,19 +25,20 @@
                 <a class="top-nav-links" href="#work-section">Work Samples</a>
                 <a class="top-nav-links" href="#awards-section">Awards</a>
                 <a class="top-nav-links" href="#testimonials-section">Testimonials</a>
-                <a class="top-nav-links" href="#">Contact</a> <!-- pop-up form -->
+                <a class="top-nav-links" href="mailto:omkarmhamal109@gmail.com">Contact</a>
             </nav>
         </div>
         <div class="all-sections">
             <div id="bio-section">
                 <h1 class="section-title">Personal Information</h1>
                 <div class="bio-box">
-                    
+
                     <div class="bio-info">
                         <p class="my-name">Omkar Mhamal</p>
-                        <p class="my-email">omkarmhamal109@gmail.com</p>
+                        <a href="mailto:omkarmhamal109@gmail.com" class="my-email">omkarmhamal109@gmail.com</a>
                         <p class="about-myself">
-                            Hi, I'm currently pursuing my Master of Computer Application degree at Goa University, with a passion for
+                            Hi, I'm currently pursuing my Master of Computer Application degree at Goa University, with
+                            a passion for
                             full-stack web development and a deep curiosity for exploring AI and ML technologies. I also
                             have a strong interest in UI/UX design, striving to create user-friendly and visually
                             appealing digital experiences. </p>
@@ -45,8 +53,10 @@
                 <div class="colaspe-list-qualification">
                     <div class="qualification-list-item">
                         <p>Graduation</p>
-                        <p> 
-                            Completed my graduation in Bachelor of Computer Science From St. Xavier's College, Goa. Securing 92% and highest marks in Computer Science Discipline in the college in April 2024 Examination.
+                        <p>
+                            Completed my graduation in Bachelor of Computer Science From St. Xavier's College, Goa.
+                            Securing 92% and highest marks in Computer Science Discipline in the college in April 2024
+                            Examination.
                         </p>
                     </div>
                     <div class="qualification-list-item">
@@ -88,28 +98,43 @@
                 <h1 class="section-title">My Previous Work</h1>
                 <div class="all-work-display">
                     <div class="sample-work-card">
-                        <div class="sample-work-1">
-                            <a href="https://omkar-109.github.io/BootstrapProject/">Website for Photo Editor App</a>
-                            <!-- display that site -->
+                        <a class="div-a" href="https://omkar-109.github.io/BootstrapProject/">
+                        <div class="sample-work-1 sample-work">
+                            <p>Website for Photo Editor App</p>
+                            <div class="site-1">
+                                <img class="site-img" src="images\p1.png">
+                            </div>
+
                         </div>
-                        <div class="sample-work-2">
-                            <!-- display that site -->
-                            <a href="https://omkar-109.github.io/Play-Drum-Website/">Play Drum</a>
+                    </a>
+                    <a href="https://omkar-109.github.io/Play-Drum-Website/">
+                        <div class="sample-work-2 sample-work">
+
+                            <p>Play Drum</p>
+                            <div class="site-2">
+                                <img class="site-img" src="images\p2.png">
+                            </div>
                         </div>
+                    </a>
 
                     </div>
+                    <a href="https://github.com/Omkar-109/Vision-Guardian_TYProject">
+                    <div class="my-projects-on-github sample-work-3 sample-work">
+                        <p>Smart Wearable for Vistually Impaired</p> 
+                        <div class="site-3">
+                            <img class="site-img" src="images\p3.png">
+                        </div>
+                    </div>
+                    </a>
                 </div>
-                <div class="my-projects-on-github">
-                    <a href="https://github.com/Omkar-109/Vision-Guardian_TYProject">Smart Wearable for Vistually
-                        Impaired</a>
-                </div>
+
 
             </div>
             <div id="awards-section">
                 <h1 class="section-title">My Achievements</h1>
                 <div class="awards-list">
-                    <p class="awards-list-text">award 1</p>
-                    <p class="awards-list-text">award 2</p>
+                    <p class="awards-list-text">Won Prizes at various tech events.</p>
+
                 </div>
 
             </div>
@@ -117,26 +142,33 @@
                 <h1 class="section-title">Testimonials</h1>
                 <div class="all-cards">
                     <div class="card-1 card">
-                        <img class="card-photo" src="images\profile-default.png">
-                        <p class="card-name">No data 1</p>
-                        <p class="card-discription">No review written</p>
+                        <img class="card-photo" src="images\profile-1.jpg">
+                        <div class="card-text">
+                            <p class="card-name">Client 1 Name</p>
+                            <p class="card-discription">No review written by any client yet.</p>
+                        </div>
+
                     </div>
                     <div class="card-2 card">
-                        <img class="card-photo" src="images\profile-default.png">
-                        <p class="card-name">No data 1</p>
-                        <p class="card-discription">No review written</p>
+                        <img class="card-photo" src="images\profile-2.jpg">
+                        <div class="card-text">
+                            <p class="card-name">Client 2 name</p>
+                            <p class="card-discription">No review written by any client yet</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </main>
 
     <footer>
         <div class="footer-content">
             <p class="footer-text">@copyrights 2025 Omkar</p>
             <div class="social-media-div">
-                <a href="#">github</a>
-                <a href="#">linkdin</a>
+                
+                <a href=""><i class="fa-brands fa-github fa-2xl"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
             </div>
         </div>
     </footer>

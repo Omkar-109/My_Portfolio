@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background: linear-gradient(90deg, #000264, #28007d, #000264, #000000);
     background-size: 400% 400%;
@@ -76,7 +80,14 @@ footer {
     border-top: 20px double;
     border-bottom: 20px double;
     border-color: wheat;
+    transition: border-radius 1s ease;
 }
+
+.my-photo:hover {
+    transition: 1s;
+    border-radius: 20% 20% 20% 20%;
+}
+
 
 p,
 h1 {
@@ -147,6 +158,11 @@ nav {
     text-align: center;
 }
 
+.section-title{
+    padding-top: 20px;
+}
+
+
 .all-cards {
     background-color: #010053;
     padding: 2% 10%;
@@ -164,7 +180,11 @@ nav {
     margin: 10px;
     padding: 10px;
     border-radius: 20px;
-    background-color: rgb(255, 189, 68);
+    background-color: wheat;
+}
+
+.card-text p{
+    color: #000;
 }
 
 .card-1, .card-2 {
@@ -220,7 +240,7 @@ h1 {
 }
 
 .my-name {
-    padding-top: 10px;
+    padding-top: 60px;
     padding-bottom: 20px;
     font-family: 'charm', 'kanit', 'Franklin Gothic Medium', sans-serif;
     font-size: 3em;
@@ -238,7 +258,6 @@ h1 {
 .about-myself {
     margin: 2px;
     font-family: 'kanit', 'Franklin Gothic Medium', sans-serif;
-
 }
 
 .social-media-div a {
@@ -252,6 +271,11 @@ h1 {
 
 .qualification-list-item {
     padding: 10px;
+}
+
+.title-qualification-text{
+    font-size: 1.4em;
+    text-decoration: underline;
 }
 
 .sample-work a{
@@ -305,8 +329,34 @@ h1 {
 }
 
 
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff3b;
+    color: rgba(255, 255, 255, 0.434);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%; 
+    font-size: 20px;
+    
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #1900ff;
+    transform: scale(1.1); 
+  }
+
+
+.footer-text{
+    font-family: Arial, sans-serif;
+}
+
+
 /* For Mobile  */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
     .bio-box {
         grid-template-columns: 1fr;
         /* Single column layout */
@@ -318,5 +368,11 @@ h1 {
 
     .my-name {
         font-size: 2em;
+        padding-top: 10px;
+    }
+
+    .all-cards{
+        flex-direction: column;
     }
 }
+

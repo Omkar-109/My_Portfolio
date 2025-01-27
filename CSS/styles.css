@@ -212,19 +212,37 @@ nav {
 }
 
 .card-text .card-discription {
-    visibility: hidden;
+    display: none;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
 
-.card-1:hover .card-text .card-discription {
-    visibility: visible;
+.card-star{
+    display: block;
     opacity: 1;
+    padding-left:20px ;
+    margin: 10px;
+    font-size: 1.5em;
+    text-shadow: 0px 0px 2px black;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card-1:hover .card-text .card-discription {
+    display: block;
+    opacity: 1;
+}
+.card-1:hover .card-star {
+    display: none;
+    opacity: 0;
 }
 
 .card-2:hover .card-text .card-discription {
-    visibility: visible;
+    display: block;
     opacity: 1;
+}
+.card-2:hover .card-star {
+    display: none;
+    opacity: 0;
 }
 
 
@@ -358,6 +376,59 @@ h1 {
     font-family: Arial, sans-serif;
 }
 
+.my-skills-name{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+    
+}
+.each-skill {
+    display: flex;
+    align-items: center;
+    margin: 5px; 
+}
+
+.each-skill img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    padding: 5px;
+}
+.each-skill p{
+    font-size: 24px;
+    text-align: left;
+}
+
+.resume-button-div{
+    height: fit-content;
+    padding-top: 50px;
+}
+.resume-a {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    border: 10px;
+    border-color: #000000;
+    box-shadow: 0px 0px 10px cyan;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #8284ff, #0400ff);
+}
+.resume-a:hover {
+    box-shadow: 0px 0px 4px black inset;
+}
+
+.footer-email {
+    padding-top: 15px;
+    font-size: 0.8em;
+}
+.footer-email a{
+    color: rgba(255, 255, 255, 0.8);
+}
+
 
 /* For Mobile  */
 @media screen and (max-width: 767px) {
@@ -377,6 +448,12 @@ h1 {
 
     .all-cards{
         flex-direction: column;
+    }
+
+    .my-skills-name{
+        grid-template-columns: 1fr;
+        gap:10px;
+        
     }
 }
 

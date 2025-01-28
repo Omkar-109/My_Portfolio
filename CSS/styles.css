@@ -434,7 +434,7 @@ h1 {
 @media screen and (max-width: 767px) {
     .bio-box {
         grid-template-columns: 1fr;
-        /* Single column layout */
+       
     }
 
     .bio-pic {
@@ -454,6 +454,12 @@ h1 {
         grid-template-columns: 1fr;
         gap:10px;
         
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        height:fit-content;     
+        text-align: center;
     }
 }
 

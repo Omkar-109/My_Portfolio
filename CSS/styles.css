@@ -133,11 +133,12 @@ nav {
 }
 
 .top-nav-links:hover {
+    padding-bottom: 30px;
     border-top: 3px dotted wheat;
     border-right: 3px dotted wheat;
     border-left: 3px dotted wheat;
     border-radius: 50px;
-    box-shadow: 0px -2px 5px rgb(8, 0, 255);
+    box-shadow: 0px 2px 5px rgb(255, 255, 255);
 }
 
 .all-cards,
